@@ -1,0 +1,25 @@
+import java.util.Scanner;
+ 
+public class eli_exercicio15 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);    
+        int n1, n2;
+        int soma, mult, div, dif;
+       
+        System.out.printf("Insira o primeiro inteiro: ");
+        n1 = input.nextInt();
+       
+        System.out.printf("Insira o segundo inteiro: ");
+        n2 = input.nextInt();
+       
+        soma = n1 + n2;
+        mult = n1 * n2;
+        div = n1/n2;
+        dif = n1 - n2;
+       
+        System.out.printf("Soma eh %d%n", soma);
+        System.out.printf("Produto eh %d%n", mult);
+        System.out.printf("Divisao eh %d%n", div);
+        System.out.printf("Diferenca eh %d%n", dif);
+    }
+}
