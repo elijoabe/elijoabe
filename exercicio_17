@@ -1,0 +1,44 @@
+import java.util.Scanner;
+ 
+public class eli_exercicio17 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);    
+        int n1, n2, n3;
+        int media, soma, prod;
+       
+        System.out.printf("Insira o primeiro inteiro: ");
+        n1 = input.nextInt();
+       
+        System.out.printf("Insira o segundo inteiro: ");
+        n2 = input.nextInt();
+ 
+        System.out.printf("Insira o terceiro inteiro: ");
+        n3 = input.nextInt();
+       
+        soma = n1 + n2 + n3;
+        prod = n1 * n2 * n3;
+        media = (n1 + n2 + n3) / 3;
+       
+        System.out.printf("Soma eh %d%n", soma);
+        System.out.printf("Produto eh %d%n", prod);
+        System.out.printf("Media eh %d%n", media);
+ 
+        //maior
+        if (n1 > n2 && n1 > n3){
+            System.out.printf("%d eh maior.%n", n1);
+        } else if  ( n2 > n1 && n2 > n3){
+            System.out.printf("%d eh maior.%n", n2);
+        } else {
+            System.out.printf("%d eh maior.%n", n3);
+        }
+        //menor
+        if (n1 < n2 && n1 < n3){
+            System.out.printf("%d eh menor.%n", n1);
+        } else if  ( n2 < n1 && n2 < n3){
+            System.out.printf("%d eh menor.%n", n2);
+        } else {
+            System.out.printf("%d eh menor.%n", n3);
+        }
+    }
+}
+ 
