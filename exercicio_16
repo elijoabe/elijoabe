@@ -1,0 +1,21 @@
+import java.util.Scanner;
+ 
+public class eli_exercicio16 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);    
+        int n1, n2;
+       
+        System.out.printf("Insira o primeiro inteiro: ");
+        n1 = input.nextInt();
+       
+        System.out.printf("Insira o segundo inteiro: ");
+        n2 = input.nextInt();
+ 
+        if(n1 > n2){
+            System.out.printf("%d eh maior.", n1);
+        } else if (n2 > n1){
+            System.out.printf("%d eh maior.", n2);
+        } else {
+            System.out.printf("Os numeros sao iguais.");
+        }
+    }
